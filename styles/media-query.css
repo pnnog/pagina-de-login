@@ -34,14 +34,15 @@ section#login div#formulario {
 
 body {
 	background-image: linear-gradient(to top, white, #49a083);
-	}
+}
+
 section#login{
-	width: 950px;
+	width: 980px;
 	
 }
 
 section#login div#imagem{
-	float: left;
+	float: right;
 	width: 50%;
 	height: 100%;
 	border-bottom-left-radius:15px;
@@ -50,10 +51,21 @@ section#login div#imagem{
 }
 
 section#login div#formulario {
-	float: right;
-	height: 100%;
+	float: left;
 	width: 50%;
 
+}
+
+section#login div#formulario h1{
+	font-size: 2em;
+	
+}
+	
+
+
+section#login div#formulario p{
+	font-size: 1.2em;
+	
 }
 	
 }
