@@ -21,7 +21,6 @@ section#login{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 	overflow: hidden;;
 	
 	background-color: white;
@@ -30,15 +29,16 @@ section#login{
 	border-radius: 20px ;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
 	
+	transform: translate(-50%, -50%);
 	transition: width 0.3s, height 0.3s;
 	transition-timing-function: ease;
 }
 
 section#login div#imagem{
 	display: block;
-	background:rgb(105, 196, 105) url(../img/small3.jpg) no-repeat;
+	background:rgb(105, 196, 105) url(../img/small5.jpg) no-repeat;
 	background-size: cover;
-	background-position: top center;
+	background-position: bottom center;
 	height: 200px;
 	overflow: hidden;
 }
@@ -55,17 +55,43 @@ section#login div#formulario h1{
 
 section#login div#formulario p{
 	font-size: 0.8em;
+	margin-bottom: 5px;
 }
 
 section#login div#campo{
-	display: block;
-	height: 50px;
-	width: 100%;
-	margin: 5px 0px;
-	border-radius: 8px;
-	background-color: #B8D0EB;
+box-sizing: border-box;
+background-color:#4f649e;
+border: 2px solid #4f649e;
+display: block;
+height: 40px;
+width: 100%;
 
+margin-bottom: 5px;
+border-radius: 8px;
 }
+
+div#campo span{
+	background-color:#4f649e;
+	color: black;
+	height: 100%;
+	width: 40px;
+	font-size: 2em;
+
+	padding: 5px;
+}
+
+div#campo input{
+	background-color: white;
+	height: 100%;
+	width:calc(100% - 44px);
+	padding: 4px;
+	border:0px;
+	border-radius: 7px;
+	font-size: 1em;
+	transform: translateY(-13px);
+}
+
+
 
 form label {
 	display: none;
